@@ -33,10 +33,10 @@ foreach ($numberArrays as $numberArray) {
   if ($maxNumberArray > $max) $max = $maxNumberArray;
 }
 
-// Сгенерировать числа Фибоначчи
-$fibonacci = array(1, 1);
+$fibonacci = array(1);
 
-for ($i = 2, $value = 2; $value < $max; $i++) {
+// Сгенерировать числа Фибоначчи
+for ($i = 1, $value = 1; $value < $max; $i++) {
   array_push($fibonacci, $value);
   $value = $fibonacci[$i] + $fibonacci[$i - 1];
 }
