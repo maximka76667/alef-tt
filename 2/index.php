@@ -16,7 +16,7 @@ foreach ($page->find('a') as $link) {
 
 // Посчитать буквы з
 for ($i = 0; $i < strlen($content); $i++) {
-  if (mb_substr($content, $i, 1) == 'з') $sum++;
+  if (mb_strtolower(mb_substr($content, $i, 1)) == 'з') $sum++;
 }
 
 echo $sum;
